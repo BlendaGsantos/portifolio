@@ -4,18 +4,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;
+  
 
 }
 
 body {
     background-color: #000;
     height: 100vh;
+ 
+      
 }
 
 .interface {
     max-width: 1250px;
     margin: auto;
-
 
 }
 
@@ -29,20 +31,27 @@ h2.titulo {
     text-align: center;
 }
 
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #05ddec;
+    transform: scale(1.05);
+}
+
 h2.titulo span {
     color: aqua;
 }
 
+
 /* Estilo do cabeçario */
 header {
-    padding: 40px 4%;
+    padding: 5px 4%;
+    
 }
 
 header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 header a {
@@ -84,6 +93,9 @@ header .btn-contato button:hover {
 /* Estilo do topo do site */
 section.topo-do-site {
     padding: 40px 4%;
+    padding-top: 90px;
+   
+    
 
 }
 
@@ -99,17 +111,20 @@ section.topo-do-site .flex {
     font-size: 38px;
     line-height: 50px;
     max-width: 100%;
+
 }
 
 .topo-do-site .txt-topo-do-site h1 span {
     color: aqua;
     max-width: 50%;
+    
 }
 
 .topo-do-site .txt-topo-do-site p {
     color: #fff;
     font-size: 20px;
     max-width: 100%;
+    text-align: justify;
 }
 
 .img-topo-site {
@@ -123,7 +138,7 @@ section.topo-do-site img {
     height: auto;
     display: flex;
     object-fit: cover;
-
+    margin-top: -100px;
 }
 
 .txt-topo-do-site {
@@ -132,7 +147,6 @@ section.topo-do-site img {
     justify-content: space-around;
     padding: 0px 100px;
     gap: 100px;
-
 
 }
 
@@ -151,10 +165,6 @@ section.topo-do-site img {
     border-radius: 30px;
 }
 
-.btn-contato button:hover {
-    box-shadow: 0px 0px 8px #05ddec;
-    transform: scale(1.05);
-}
 
 .topo-do-site .img-topo-site img {
     position: relative;
@@ -177,12 +187,14 @@ section.topo-do-site img {
 
 section.especialidades {
     padding: 40px 4%;
+
 }
 
-section.especialidades .flex {
+section.especialidades .flex{
     gap: 60px;
     margin-top: 20px;
-   
+
+    
 }
 
 .especialidades .especialidades-box {
@@ -193,6 +205,7 @@ section.especialidades .flex {
     margin-right: 25px;
     margin-top: 20px;
     transition: .2s;
+
 }
 .especialidades .especialidades-box:hover{
     transform: scale(1.05);
@@ -205,16 +218,214 @@ section.especialidades .flex {
     font-size: 70px;
     color: #12dbff;
     margin-top: 20px;
-   
-   
     
 }
 
 .especialidades .especialidades-box h3{
     font-size: 28px;
     color: antiquewhite;
+    
    
-  
 
 
+}
+
+/* estilo do sobre */
+section.sobre img{
+    border-radius: 40px;
+    
+}
+
+section.sobre{
+    padding: 40px 15%;
+    margin-top: 260PX;
+    margin-bottom: 240px ;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    margin: 20px;
+ 
+    
+}
+.sobre .txt-sobre h3{
+    margin: 20px;
+    color: aqua;
+}
+
+.sobre .txt-sobre h2 span{
+    color: aqua;
+    display: block;
+    
+}
+.sobre .txt-sobre p{
+    margin: 20px;
+    text-align: justify;
+}
+.sobre .txt-sobre .btn-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+   
+}
+.sobre .txt-sobre .btn-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-right: 16px; 
+}
+
+.btn-social button{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: aqua;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+    margin: 0px;
+
+}
+
+/* estilo do porftfolio */
+section.portifolio{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    margin-bottom: 30px;
+ 
+}
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 130px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008b;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO */
+
+
+section.formulario{
+    padding: 80px 4%;
+
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+ 
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #17bdbd;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Estilo rodapé */
+footer{
+    padding: 5px 0;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+
+   
+}
+
+footer .flex{
+    justify-content: space-between;
+    
+}
+
+footer .line-footer{
+    padding: 20px 0;
+   
+}
+
+.borda{
+    border-top: 2px solid #12dbff;
+}
+
+footer .line-footer p i{
+    color: #0ed9f0;
+    font-size: 22px;
+   
+}
+
+footer .line-footer p a{
+    color:#fff;
+   
 }

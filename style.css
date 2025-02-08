@@ -19,6 +19,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body, html {
+    overflow-x: hidden; /* Impede o desbordamento horizontal */
+  }
+
 .interface {
     max-width: 1250px;
     margin: auto;

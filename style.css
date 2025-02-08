@@ -126,7 +126,7 @@ header nav.menu-desktop ul li {
     color: #292626;
     font-size: 20px;
     font-weight: 300;
-    padding: 20px 8%;
+    padding: 20px 18%;
     display: block;
 }
 
@@ -674,13 +674,13 @@ footer .line-footer p a {
         font-size: 40px;
         line-height: 80px;
         margin: 10px;
-        padding: 30px;
+        padding: 10px;
 
     }
 
-    .menu-desktop,
-    .btn-contato {
+    .menu-desktop,.btn-contato {
         display: none;
+   
     }
 
     section.topo-do-site .flex {
@@ -724,13 +724,14 @@ footer .line-footer p a {
     }
 
     section.portfolio {
-        padding: 80px 8%;
+        padding: 80px 18%;
     }
 
     .img-port {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
+        
     }
 
     section.portfolio .flex {

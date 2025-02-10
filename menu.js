@@ -14,3 +14,11 @@ menu.addEventListener('click', ()=>{
 overlay.addEventListener('click', ()=>{
     menu.classList.remove('abrir-menu')
 })
+
+const handLesubnit = (event) =>{
+    event.preventDefault();
+
+    alert('enviando form...')
+}
+
+document.querySelector('form').addEventListener('submit', handLesubnit);

@@ -43,6 +43,8 @@ h2.titulo {
 button:hover, form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #05ddec;
     transform: scale(1.05);
+   
+  
 }
 
 h2.titulo span {
@@ -224,6 +226,7 @@ section.topo-do-site img {
     margin-top: 20px;
     transition: 2s;
     border-radius: 30px;
+    cursor: pointer;
 
 }
 
